@@ -1,0 +1,93 @@
+@use '../functions/_convert' as c;
+
+// Mixin to convert hex color to rgba with opacity
+@mixin hex-to-rgba($color, $alpha) {
+  $r: red($color);
+  $g: green($color);
+  $b: blue($color);
+  background-color: rgba($r, $g, $b, $alpha);
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+}
+
+// Crop text and display an ellipsis with multiline.
+@mixin text-ellipsis($number-of-lines: 1, $orientation: vertical) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @if $number-of-lines ==1 {
+    white-space: nowrap;
+  }
+
+  @else {
+    white-space: inherit;
+
+    @supports (-webkit-line-clamp: $number-of-lines) {
+      -webkit-box-orient: $orientation;
+      display: -webkit-box;
+      -webkit-line-clamp: $number-of-lines;
+    }
+  }
+}
+
+// Hide something from the screen but keep it visible for assistive technology.
+@mixin visually-hidden {
+  height: 0 !important;
+  width: 0 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  inline-size: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  visibility: hidden !important;
+}
+
+// Style for headers in app
+@mixin header {
+  font-size: c.rem-calc(24px);
+  line-height: c.rem-calc(36px);
+  font-weight: 500;
+}
+
+// Style for titles in app
+@mixin title {
+  font-size: c.rem-calc(40px);
+  line-height: c.rem-calc(48px);
+  font-weight: 600;
+}
+
+// Style for input titles in app
+@mixin input-title {
+  font-size: c.rem-calc(12px);
+  line-height: c.rem-calc(14px);
+  font-weight: 500;
+}
+
+// Style for default font-size in app
+@mixin default {
+  font-size: c.rem-calc(16px);
+  line-height: c.rem-calc(24px);
+  font-weight: 400;
+}
+
+// Style for small texts in app
+@mixin small-text {
+  font-size: c.rem-calc(14px);
+  line-height: c.rem-calc(16px);
+  font-weight: 400;
+}
+
+// Style for bigger text in app
+@mixin bigger-text {
+  font-size: c.rem-calc(20px);
+  line-height: c.rem-calc(30px);
+  font-weight: 500;
+}
