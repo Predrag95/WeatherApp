@@ -1,0 +1,30 @@
+$screens: (
+  screen300: 300px,
+  screen350: 350px,
+  screen400: 400px,
+  screen425: 425px,
+  screen480: 480px,
+  screen600: 600px,
+  screen650: 650px,
+  screen750: 750px,
+  screen900: 900px,
+  screen1024: 1024px,
+  screen1100: 1100px,
+  screen1200: 1200px,
+  screen1366: 1366px,
+  // screenMin2000: 2000px,
+);
+
+@mixin breakpoints($width, $type: max) {
+  @if map_has_key($screens, $width) {
+    $width: map_get($screens, $width);
+
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$width}`. "+("Available breakpoints are: #{map-keys($screens)}.");
+  }
+}

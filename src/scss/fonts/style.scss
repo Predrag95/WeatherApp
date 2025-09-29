@@ -1,0 +1,22 @@
+// Font Config
+
+@mixin font-face($file, $weight, $name: 'Roboto') {
+  @font-face {
+    font-family: "#{$name}";
+    font-style: normal;
+    font-weight: $weight;
+    src: local($file),
+    // url('#{$file}.woff') format('woff'),
+    url('./font_ttf/#{$file}.ttf') format('truetype');
+  }
+}
+
+@include font-face('Roboto-Thin', 100);
+@include font-face('Roboto-ExtraLight', 200);
+@include font-face('Roboto-Light', 300);
+@include font-face('Roboto-Regular', normal);
+@include font-face('Roboto-Medium', 500);
+@include font-face('Roboto-SemiBold', 600);
+@include font-face('Roboto-Bold', 700);
+@include font-face('Roboto-ExtraBold', 800);
+@include font-face('Roboto-Black', 900);
