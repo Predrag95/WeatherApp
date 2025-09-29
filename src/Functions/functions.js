@@ -1,0 +1,2 @@
+// Function for calculating HEX color with Alpha (transparency), and return the calculated hex color
+export const setColorOpacity = (hex, alpha) => `${hex}${Math.floor(alpha * 255).toString(16).padStart(2, '0')}`;
