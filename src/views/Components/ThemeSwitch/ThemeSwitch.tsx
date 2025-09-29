@@ -39,7 +39,7 @@ const ThemeSwitch = () => {
   return (
     <div /*className={classes.container}*/ data-aos='fade-up' data-aos-duration='800' data-aos-offset='-4000'>
       <div>
-        <SunIcon className='icon_24' stroke={strokeHanlder('light')} />
+        <SunIcon /*className='icon_24'*/ stroke={strokeHanlder('light')} />
       </div>
       <div>
         <Tooltip title='Promeni temu' arrow>

@@ -1,0 +1,56 @@
+// @import 'variables';
+// @import '~bootstrap/scss/bootstrap';
+
+:root {
+  --bg-color: #EEF0F4;
+  --bg-color-1: #FEFEFE;
+  --bg-color-2: #FEFEFE;
+  --bg-color-3: #EFF5FE;
+  --bg-color-4: #9EA8BB;
+  --bg-color-5: #F2F6FA;
+  --bg-color-6: #E5F3FF;
+  --text-color: #586A84;
+  --text-color-dark: #3B4758;
+  --border-color: #EFF5FE;
+  --gray-color-default: #F2F6FA;
+  --gray-color: #647285;
+  --gray-color-2: #647285;
+  --card-color: #eff5fe36;
+  --ticker-color: #586A84;
+}
+
+body.light {
+  --bg-color: #EEF0F4;
+  --bg-color-1: #FEFEFE;
+  --bg-color-2: #FEFEFE;
+  --bg-color-3: #EFF5FE;
+  --bg-color-4: #9EA8BB;
+  --bg-color-5: #F2F6FA;
+  --bg-color-6: #E5F3FF;
+  --text-color: #586A84;
+  --text-color-dark: #3B4758;
+  --border-color: #EFF5FE;
+  --gray-color-default: #F2F6FA;
+  --gray-color: #647285;
+  --gray-color-2: #647285;
+  --card-color: #eff5fe36;
+  --ticker-color: #586A84;
+}
+
+body.dark {
+  --bg-color: #586A84;
+  --bg-color-1: #586A84;
+  --bg-color-2: #36404B;
+  --bg-color-3: #36404B;
+  --bg-color-4: #586A84;
+  --bg-color-5: #647285;
+  --bg-color-6: #586A84;
+  --text-color: #FEFEFE;
+  --text-color-dark: #A2B7D5;
+  --border-color: #A2B7D5;
+  --gray-color-default: #36404B;
+  --gray-color: #A2B7D5;
+  --gray-color-2: #EFF5FE;
+  --card-color: #36404B;
+  --ticker-color: #A2B7D5;
+}
