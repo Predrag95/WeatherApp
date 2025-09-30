@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
 type MoonIconProps = {
   stroke?: string; 
 } & React.SVGProps<SVGSVGElement>;
 
 const MoonIcon = ({stroke, ...props}: MoonIconProps) => (
-  <svg width="28" height="28" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-    <path d="M2.71153 14.9234C3.1336 20.9613 8.25705 25.8737 14.3888 26.1434C18.715 26.331 22.5839 24.3144 24.9053 21.1372C25.8667 19.8358 25.3508 18.9682 23.7446 19.2613C22.9591 19.402 22.1501 19.4606 21.306 19.4255C15.5729 19.191 10.8833 14.3958 10.8598 8.73306C10.8481 7.20892 11.1646 5.76685 11.7391 4.45375C12.3722 2.99995 11.6102 2.30823 10.1446 2.92961C5.50187 4.88754 2.32463 9.56547 2.71153 14.9234Z" stroke={stroke || "#223450"} strokeWidth="1.22339" strokeLinecap="round" strokeLinejoin="round" />
+  <svg width='28' height='28' viewBox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg' {...props}>
+    <path d='M2.71153 14.9234C3.1336 20.9613 8.25705 25.8737 14.3888 26.1434C18.715 26.331 22.5839 24.3144 24.9053 21.1372C25.8667 19.8358 25.3508 18.9682 23.7446 19.2613C22.9591 19.402 22.1501 19.4606 21.306 19.4255C15.5729 19.191 10.8833 14.3958 10.8598 8.73306C10.8481 7.20892 11.1646 5.76685 11.7391 4.45375C12.3722 2.99995 11.6102 2.30823 10.1446 2.92961C5.50187 4.88754 2.32463 9.56547 2.71153 14.9234Z' stroke={stroke || '#223450'} strokeWidth='1.22339' strokeLinecap='round' strokeLinejoin='round' />
   </svg>
 );
 

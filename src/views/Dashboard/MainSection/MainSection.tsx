@@ -1,6 +1,8 @@
+import classes from './MainSection.module.scss';
+
 const MainSection = () => {
   return (
-    <div>MainSection</div>
+    <div className={classes.container}>MainSection</div>
   )
 };
 

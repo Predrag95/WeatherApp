@@ -1,0 +1,9 @@
+@use 'src/scss/mixins/_flex' as f;
+
+.container {
+  @include f.v-flex;
+  // background-color: #add8e6;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
