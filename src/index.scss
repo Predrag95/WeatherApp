@@ -1,36 +1,28 @@
-// @use 'src/scss/mixins/_breakpoints' as mq;
-// @use 'scss/base/fonts' as fonts;
-// @use 'src/scss/functions/_convert' as c;
-
-// @forward 'scss/fonts/style';
-
-// @import 'scss/base/colors';
-
-// iframe#webpack-dev-server-client-overlay {
-//   display: none !important
-// }
-
 html,
 body {
-  // @include fonts.primary-font;
-  // @include fonts.font-size;
-
-  & {
-    // color: var(--text-color) !important;
-    line-height: normal !important;
-    outline: none;
-    scroll-behavior: smooth;
-    -webkit-font-smoothing: antialiased;
-    -webkit-font-smoothing: subpixel-antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-  }
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  padding: 1rem;
+  padding: 20px;
   box-sizing: border-box;
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+}
+
+.appContainer {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 6fr 3fr;
+  gap: 20px;
+
+  .mainSectionContainer {
+    background-color: lightblue;
+  }
 }

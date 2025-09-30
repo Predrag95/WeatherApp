@@ -1,6 +1,8 @@
+import classes from './SupportSection.module.scss';
+
 const SupportSection = () => {
   return (
-    <div>SupportSection</div>
+    <div className={classes.container}>SupportSection</div>
   )
 };
 
